@@ -95,21 +95,12 @@ input:focus, textarea:focus {
     border: 1px solid #ddd;
 }
 
-#lastname_error,#firstname_error {
-    display: none;
-}
 
-#cardid_error {
-    display:none;
-}
 
 #cardid_error_box {
-    display:flexbox;
+    display:grid;
     grid-area: flexbox2;
     justify-self: center;
     align-self: center;
 }
 
-#cardidnum_error {
-    display:none;
-}
