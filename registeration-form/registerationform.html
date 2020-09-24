@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    
-  <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery_valid.js"></script>  
+    <title></title>
  </head>
  <body>
     <div id="title">
@@ -18,7 +19,7 @@
       <form action="" method="GET" id="form" name="regform" onsubmit="return validated()" >
         <div id="flexbox">
           <input type="text" autocomplete="off" name="firstname" id="firstname" placeholder="نام" oninput="return fname_verify()">
-          <input type="text" name="lastname" id="lastname" placeholder="نام خانوادگی" oninput="return lname_verify()">
+          <input type="text" autocomplete="off" name="lastname" id="lastname" placeholder="نام خانوادگی" oninput="return lname_verify()">
         </div>
         <div id="flexbox1">
           <div id="firstname_error">Please enter your name</div>
@@ -27,7 +28,7 @@
         
         
         
-        <input type="text" name="cardid" id="cardid" placeholder="کد ملی" oninput="return cardid_verify()">
+        <input type="text" autocomplete="off" name="cardid" id="cardid" placeholder="کد ملی" oninput="return cardid_verify()">
         <div id="cardid_error_box">
         <div id="cardid_error">Please enter your full id card</div>
         <div id="cardidnum_error">only numbers are valid</div>
@@ -43,7 +44,7 @@
         
       </form>
     </div>
-    <script src="valid.js"></script>
+    <!--<script src="valid.js"></script>-->
  </body>
 
 </html>
